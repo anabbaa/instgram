@@ -1,0 +1,30 @@
+.Nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: row;
+    height: 4vh;
+    width: 100vw;
+    position: relative;
+    top: -16vh;
+    left: 11vw;
+}
+.Nav-photo-father{
+    height: 2vw;
+    width: 33vw;
+
+}
+.Nav-img{
+    height: 2vh;
+    width: 10vw;
+}
+form{
+    width: 33%;
+}
+a{
+    color: black;
+}
+input{
+    text-align: center;
+
+}

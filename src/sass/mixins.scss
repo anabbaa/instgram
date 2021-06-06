@@ -1,0 +1,32 @@
+@mixin flex-center-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    @mixin flex-spacebetween-column{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    }
+    @mixin flex-center-row{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    }
+    @mixin flex-spacebetween-row{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    }
+    @mixin flex-photo{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    }

@@ -1,0 +1,26 @@
+.Main-father{
+    @include flex-center-row;
+    width: 33vw;
+    height: 2vh;
+    
+    
+    
+
+}
+
+.Menue-father{
+    @include flex-spacebetween-row;
+
+height: 2vh;
+width: 33vw;
+position: relative;
+left: 33vw;
+}
+.Photo{
+    @include flex-photo;
+    width: 66vw;
+    height: 12vh;
+    position: relative;
+    left: 16vw;
+
+}
