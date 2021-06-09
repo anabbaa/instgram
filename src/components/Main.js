@@ -3,6 +3,9 @@ import { FaTh } from "react-icons/fa";
 import { FaAddressBook } from "react-icons/fa";
 import { FaDesktop } from "react-icons/fa";
 import { FaRegCaretSquareRight } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
+import { FaCommentAlt } from "react-icons/fa";
+
 
 
 
@@ -14,27 +17,30 @@ const Main = (props)=>{
   const showphoto = photo.map((obj)=>{
     const {
       id,
-      img1,
-      img2,
-      img3,
-      img4,
-      img5,
-      img6,
-      img7,
-      img8,
-      img9,
+      ititle,
+      text,
+      likes,
+      comments,
+      img,
     } = obj;
     return(
       <div>
-        <img src={img1} alt=""/>
-        <img src={img2} alt=""/>
-        <img src={img3} alt=""/>
-        <img src={img4} alt=""/>
-        <img src={img5} alt=""/>
-        <img src={img6} alt=""/>
-        <img src={img7} alt=""/>
-        <img src={img8} alt=""/>
-        <img src={img9} alt=""/>
+        <li key={obj.id} className="image">
+      <img src={obj.img} alt={obj.title}  />
+      <div className="image--overlay">
+        <div >
+          <span>
+  {<i class="fas fa-heart"></i>}</span>
+
+         <div className="like"> {obj.likes}</div>
+        </div>
+        <div>
+      <span>{<i class="fas fa-comment"></i>}</span>  
+
+         <div className="comment"> {obj.comments}</div>
+        </div>
+      </div>
+    </li>
       </div>
     );
   });
@@ -51,7 +57,7 @@ const Main = (props)=>{
       </div>  
        
 
-      <div className="Photo">
+      <div className="image-father">
 {showphoto}
 
   

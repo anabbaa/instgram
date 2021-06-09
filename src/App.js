@@ -2,7 +2,7 @@ import React, {useState}  from "react";
 import Nav from "./components/Nav";
 import Info from "./components/Info";
 import Main from "./components/Main";
-import Gallery from "./gallery.json";
+import Gallery from "./likes.json";
 import Post from "./post.json";
 
 

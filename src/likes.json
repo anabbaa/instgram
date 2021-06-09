@@ -1,0 +1,75 @@
+[
+    {
+      "id": 0,
+      "title": "sunset",
+      "text": "Enjoining my day",
+      "likes": 23485,
+      "comments": 3424,
+      "img": "./img/main1.png"
+    },
+    {
+      "id": 1,
+      "title": "boy",
+      "text": "Enjoining my day",
+      "likes": 23435,
+      "comments": 3374,
+      "img": "./img/main2.png"
+    },
+    {
+      "id": 2,
+      "title": "singer",
+      "text": "Enjoining my day",
+      "likes": 2555,
+      "comments": 3104,
+      "img": "./img/main3.png"
+    },
+    {
+      "id": 3,
+      "title": "cat",
+      "text": "Enjoining my day",
+      "likes": 22245,
+      "comments": 3294,
+      "img": "./img/main4.png"
+    },
+    {
+      "id": 4,
+      "title": "girl",
+      "text": "Enjoining my day",
+      "likes": 2764,
+      "comments": 2743,
+      "img": "./img/main5.png"
+    },
+    {
+      "id": 5,
+      "title": "playing1",
+      "text": "Enjoining my day",
+      "likes": 4727,
+      "comments": 3173,
+      "img": "./img/main6.png"
+    },
+    {
+      "id": 6,
+      "title": "playing",
+      "text": "Enjoining my day",
+      "likes": 6665,
+      "comments": 2848,
+      "img": "./img/main7.png"
+    },
+    {
+      "id": 7,
+      "title": "sport",
+      "text": "Enjoining my day",
+      "likes": 1235,
+      "comments": 2351,
+      "img": "./img/main8.png"
+    },
+    {
+      "id": 8,
+      "title": "music",
+      "text": "Enjoining my day",
+      "likes": 8742,
+      "comments": 6421,
+      "img": "./img/main9.png"
+    }
+  ]
+  
