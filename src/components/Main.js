@@ -17,7 +17,7 @@ const Main = (props)=>{
   const showphoto = photo.map((obj)=>{
     const {
       id,
-      ititle,
+      title,
       text,
       likes,
       comments,
@@ -25,19 +25,19 @@ const Main = (props)=>{
     } = obj;
     return(
       <div>
-        <li key={obj.id} className="image">
-      <img src={obj.img} alt={obj.title}  />
+        <li key={id} className="image">
+      <img src={img} width="300px" height="300px" alt={title}  />
       <div className="image--overlay">
         <div >
           <span>
   {<i class="fas fa-heart"></i>}</span>
 
-         <div className="like"> {obj.likes}</div>
+         <div className="like"> {likes}</div>
         </div>
         <div>
       <span>{<i class="fas fa-comment"></i>}</span>  
 
-         <div className="comment"> {obj.comments}</div>
+         <div className="comment"> {comments}</div>
         </div>
       </div>
     </li>
@@ -49,7 +49,9 @@ const Main = (props)=>{
     return (
 
     <div>
+        <div className="line"></div>
       <div className="Menue-father">
+      
            <div><FaTh />Posts</div>
            <div>< FaRegCaretSquareRight />Reels</div>
            <div>< FaDesktop />IGTV</div>

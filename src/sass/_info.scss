@@ -1,9 +1,10 @@
 .Info-father{
     @include flex-center-col;
-    width: 66vw;
+    width: 44vw;
     height: 22vh;
     position: relative;
     top: -16vh;
+    left: 2vw;
 }
 
 .Info-top{
@@ -12,8 +13,13 @@
     height: 12vh;
     width: 33vw;
     position: relative;
-    left: 16vw;
+    left: 2vw;
+    
   
+    }
+    .instgram-top{
+        font-size: 2rem;
+    font-weight: bolder;
     }
     .Square{
         height: 4vh;
@@ -33,9 +39,16 @@
         left: 0.5vw;
         position: absolute;
     }
-.Info-img{
+.profile-img{
     width: 12vw;
-    height: 12vh;
+    height: 16vh;
+    border-radius: 50%;
+    position: relative;
+    right: 2vw;
+}
+.follow{
+    position: relative;
+    left: -13vh;
 }
 .Info-text{
     width: 22vw;
@@ -43,21 +56,10 @@
     @include flex-center-col;
 
     position: relative;
-    left: 18vw;
+    left: 8vw;
     top: 2vh;
     
-} 
-.Info-img-bottom{
 
-    @include flex-center-row;
-    position: relative;
-    left: 1vw;
-    top: -8vh;
-
-}
-.Img{
-    height: 8vh;
-    width: 8vw;
 }
 button{
     background-color: rgb(0, 140, 255);
@@ -76,4 +78,14 @@ button{
     width: 22vw;
     position: relative;
     left: 16vw;
+}
+ 
+.Info-img-bottom{
+
+    @include flex-spacebetween-row;
+    position: relative;
+    width: 22vw;
+    left: 12vw;
+    top: -8vh;
+
 }

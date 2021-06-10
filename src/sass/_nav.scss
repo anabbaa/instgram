@@ -4,14 +4,14 @@
     align-items: flex-end;
     flex-direction: row;
     height: 4vh;
-    width: 100vw;
+    width: 66vw;
     position: relative;
     top: -20vh;
-    left: 11vw;
+    left: 12vw;
 }
 .Nav-photo-father{
     height: 2vw;
-    width: 33vw;
+    width: 12vw;
 
 }
 .Nav-img{
@@ -27,4 +27,12 @@ a{
 input{
     text-align: center;
 
+}
+.img-icon{
+    height: 3vh;
+    width: 2vw;
+    border-radius: 50%;
+    position: relative;
+    left: -0.3vw;
+    top: 0.5vh;
 }

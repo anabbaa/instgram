@@ -19,16 +19,16 @@ const Info = (props)=>{
         <div>
             <div className="Info-father">
             <div className="Info-top">
-                <img className="Info-img" src="./img/instgram.info.jpg" alt="instgraminfo"/>
+                <img className="profile-img" src="./img/profile.png" alt="instgraminfo"/>
                 
                 
-                    <span>instgram</span> 
+                    <span className="instgram-top">Instgram</span> 
                     <span className="Icon-tick"><FaRegCheckCircle /></span>
                     <button>Follow</button>
                     <div className="Square"></div>
                     <span>...</span>
                 </div>
-                   <div >
+                   <div className="follow" >
                        {follow}
                    </div>
                 <div className="Info-text">
@@ -43,12 +43,12 @@ const Info = (props)=>{
             
                 </div>
                 <div className="Info-img-bottom">
-                <div><a href="#"><img className="Img"  src="./img/1.png" alt= "1" /></a></div>
-                <div><a href="#"><img className="Img" src="./img/2.png" alt= "2"/></a></div>
-                <div><a href="#"><img className="Img" src="./img/3.png" alt= "3"/></a></div>
-                <div><a href="#"><img className="Img" src="./img/4.png" alt= "4"/></a></div>
-                <div><a href="#"><img className="Img" src="./img/5.png" alt= "5"/></a></div>
-                <div><a href="#"><img className="Img" src="./img/6.png" alt= "6"/></a></div>
+                <div><img className="Img"  src="./img/1.png" alt= "1" width="100px" height="100px" /></div>
+                <div><img className="Img" src="./img/2.png" alt= "2"  width="100px" height="100px"/></div>
+                <div><img className="Img" src="./img/3.png" alt= "3"  width="100px" height="100px"/></div>
+                <div><img className="Img" src="./img/4.png" alt= "4"  width="100px" height="100px"/></div>
+                <div><img className="Img" src="./img/5.png" alt= "5"  width="100px" height="100px"/></div>
+                <div><img className="Img" src="./img/6.png" alt= "6"  width="100px" height="100px"/></div>
                 </div>
         </div>
     );

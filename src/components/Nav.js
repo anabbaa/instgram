@@ -2,7 +2,6 @@ import { ImHome } from "react-icons/im";
 import { FaRegHeart} from "react-icons/fa";
 import { FaRegPaperPlane} from "react-icons/fa";
 import { FaCompass} from "react-icons/fa";
-import { FaUserAlt} from "react-icons/fa";
 
 
 
@@ -15,7 +14,7 @@ const Nav = ()=>{
                 <img className="Nav-img"src="./img/instgram.png" alt="instgram"/>
             </div>
             <form>
-            <input type="search" placeholder="search"/>
+            <input type="search" placeholder="search&#128269; "/>
 
             </form>
             <div>
@@ -24,7 +23,7 @@ const Nav = ()=>{
         <a href="#">< FaRegPaperPlane /></a>
         <a href="#"> < FaCompass /></a>
         <a href="#"><FaRegHeart/> </a>
-        <a href="#">< FaUserAlt /> </a>
+        <img className="img-icon" src="./img/profile.png" alt="imgicon" />
 
         
             </div>
