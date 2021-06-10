@@ -18,7 +18,6 @@ const Main = (props)=>{
     const {
       id,
       title,
-      text,
       likes,
       comments,
       img,
@@ -32,12 +31,12 @@ const Main = (props)=>{
           <span>
   {<i class="fas fa-heart"></i>}</span>
 
-         <div className="like"> {likes}</div>
+         <div className="like"> {obj.likes}</div>
         </div>
         <div>
       <span>{<i class="fas fa-comment"></i>}</span>  
 
-         <div className="comment"> {comments}</div>
+         <div className="comment"> {obj.comments}</div>
         </div>
       </div>
     </li>

@@ -1,92 +1,100 @@
-.line{
-  border-bottom: 1px solid gray;
-  height: 1vh;
-  width: 62vw;
+
+  .line{
+    border-bottom: 1px solid gray;
+    height: 1vh;
+    width: 62vw;
+    position: relative;
+    top: -2vh;
+  }
+  
+  .Main-father{
+      @include flex-center-row;
+      width: 33vw;
+      height: 2vh;
+      
+      
+      
+  
+  }
+  
+  .Menue-father{
+      @include flex-spacebetween-row;
+  
+  height: 2vh;
+  width: 33vw;
   position: relative;
-  top: -2vh;
-}
-
-.Main-father{
-    @include flex-center-row;
-    width: 33vw;
-    height: 2vh;
-    
-    
-    
-
-}
-
-.Menue-father{
-    @include flex-spacebetween-row;
-
-height: 2vh;
-width: 33vw;
-position: relative;
-left: 16vw;
-}
-.image-father{
-    @include flex-photo;
-    width: 66vw;
-    height: 12vh;
-    position: relative;
-    left: -2vw;
-    top: 2vh;
-}
-
-
-
- 
-  .image--overlay {
-    position: absolute;
-    top: 1vh;
-    left: -1vw;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.100);
-    color: white;
-    margin: 10px;
-    opacity: 0;
-    transition: 1s;
-    &:hover {
-      opacity:1 ;
-      cursor: pointer;
+  left: 16vw;
+  }
+  .image-father{
+      @include flex-photo;
+      width: 66vw;
+      height: 12vh;
+      position: relative;
+      left: -2vw;
+      top: 2vh;
+  }
+  
+  
+  
+    .image {
+      position: relative;
+      width: 293px;
+      height: 293px;
+      margin: 10px;
     }
-  }
   
-  .like {
-    font-size: 1rem;
-    font-weight: bold;
-    position: relative;
-    left: 2vw;
-    top: 8vh;
-  }
-  
-  .image--description {
-    font-size: 1.3em;
-  }
-  .fa-heart{
-    color: white;
-    font-size: 2rem;
-    position: relative;
-    left: 6vw;
-    top: 11vh;
-    width: 4vw;
-  }
-  .fa-comment{
-    color: white;
-    font-size: 2rem;
-    position: relative;
-    left: 14vw;
-    top: 5vh;
-  }
-  .comment{
-    font-size: 1rem;
-    font-weight: bold;
-    position: relative;
-    left: 11vw;
-    top: 2vh;
-  }
-  li{
-    list-style: none;
-  }
-  
+   
+    .image--overlay {
+      position: absolute;
+      top: -0.7vh;
+      left: -0.5vw;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.089);
+      color: white;
+      margin: 10px;
+      opacity: 0;
+      transition: 1s;
+      &:hover {
+        opacity:1 ;
+        cursor: pointer;
+      }
+    }
+    
+    .like {
+      font-size: 1rem;
+      font-weight: bold;
+      position: relative;
+      left: 2vw;
+      top: 8vh;
+    }
+    
+    .image--description {
+      font-size: 1.3em;
+    }
+    .fa-heart{
+      color: white;
+      font-size: 2rem;
+      position: relative;
+      left: 6vw;
+      top: 11vh;
+      width: 4vw;
+    }
+    .fa-comment{
+      color: white;
+      font-size: 2rem;
+      position: relative;
+      left: 14vw;
+      top: 5vh;
+    }
+    .comment{
+      font-size: 1rem;
+      font-weight: bold;
+      position: relative;
+      left: 11vw;
+      top: 2vh;
+    }
+    li{
+      list-style: none;
+    }
+    
