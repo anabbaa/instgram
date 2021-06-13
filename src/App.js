@@ -11,13 +11,15 @@ import Post from "./post.json";
 function App() {
   const [photo, setPhoto] = useState(Gallery);
   const [posts, setPosts] = useState(Post);
+  const [userInput, setUserInpt] = useState(0);
+
 
 
   return (
     <div className="App">
       < Nav />
       <Info posts={posts}/>
-      <Main photo = {photo} />
+      <Main photo = {photo} setUserInpt={setUserInpt}/>
         </div>
   );
 }

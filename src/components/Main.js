@@ -1,10 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import { FaTh } from "react-icons/fa";
 import { FaAddressBook } from "react-icons/fa";
 import { FaDesktop } from "react-icons/fa";
 import { FaRegCaretSquareRight } from "react-icons/fa";
-import { FaHeart } from "react-icons/fa";
-import { FaCommentAlt } from "react-icons/fa";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import { faComment } from '@fortawesome/free-solid-svg-icons'
+
 
 
 
@@ -12,31 +14,41 @@ import { FaCommentAlt } from "react-icons/fa";
 
 
 const Main = (props)=>{
+
+
   
+
   const {photo} = props;
+
+  const [clicks , setClicks] = useState(0);
+  function add (){
+    setClicks((prevState)=>prevState + 1);
+  }
+
   const showphoto = photo.map((obj)=>{
+
     const {
       id,
       title,
-      likes,
       comments,
       img,
     } = obj;
+
     return(
       <div>
         <li key={id} className="image">
       <img src={img} width="300px" height="300px" alt={title}  />
       <div className="image--overlay">
         <div >
-          <span>
-  {<i class="fas fa-heart"></i>}</span>
+         
+          <FontAwesomeIcon icon={faHeart} onClick={add} />
 
-         <div className="like"> {obj.likes}</div>
+         <div className="like" > {clicks}</div>
         </div>
         <div>
-      <span>{<i class="fas fa-comment"></i>}</span>  
+      <span> <FontAwesomeIcon icon={faComment} /> </span>
 
-         <div className="comment"> {obj.comments}</div>
+         <div className="comment"> {comments}</div>
         </div>
       </div>
     </li>
