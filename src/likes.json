@@ -3,30 +3,35 @@
       "id": 0,
       "title": "sunset",
       "comments": 3424,
+      "likes": 0,
       "img": "./img/main1.png"
     },
     {
       "id": 1,
       "title": "boy",
       "comments": 3374,
+      "likes": 0,
       "img": "./img/main2.png"
     },
     {
       "id": 2,
       "title": "singer",
       "comments": 3104,
+      "likes": 0,
       "img": "./img/main3.png"
     },
     {
       "id": 3,
       "title": "cat",
       "comments": 3294,
+      "likes": 0,
       "img": "./img/main4.png"
     },
     {
       "id": 4,
       "title": "girl",
       "comments": 2743,
+      "likes": 0,
       "img": "./img/main5.png"
     },
 
@@ -34,24 +39,28 @@
       "id": 5,
       "title": "playing1",
       "comments": 3173,
+      "likes": 0,
       "img": "./img/main6.png"
     },
     {
       "id": 6,
       "title": "playing",
       "comments": 2848,
+      "likes": 0,
       "img": "./img/main7.png"
     },
     {
       "id": 7,
       "title": "sport",
       "comments": 2351,
+      "likes": 0,
       "img": "./img/main8.png"
     },
     {
       "id": 8,
       "title": "music",
       "comments": 6421,
+      "likes": 0,
       "img": "./img/main9.png"
     }
   ]

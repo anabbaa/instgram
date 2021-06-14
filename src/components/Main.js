@@ -7,22 +7,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { faComment } from '@fortawesome/free-solid-svg-icons'
 
-
-
-
-
-
-
 const Main = (props)=>{
+  const {photo, setLikes} = props;
 
-
-  
-
-  const {photo} = props;
-
-  const [clicks , setClicks] = useState(0);
-  function add (){
-    setClicks((prevState)=>prevState + 1);
+  function add (id, e){
+    setLikes(id);
+   // setClicks((prevState)=>prevState + 1);
   }
 
   const showphoto = photo.map((obj)=>{
@@ -32,6 +22,8 @@ const Main = (props)=>{
       title,
       comments,
       img,
+      likes,
+
     } = obj;
 
     return(
@@ -41,9 +33,9 @@ const Main = (props)=>{
       <div className="image--overlay">
         <div >
          
-          <FontAwesomeIcon icon={faHeart} onClick={add} />
+          <FontAwesomeIcon icon={faHeart} onClick={e => add(id)} />
 
-         <div className="like" > {clicks}</div>
+         <div className="like"> {likes}</div>
         </div>
         <div>
       <span> <FontAwesomeIcon icon={faComment} /> </span>

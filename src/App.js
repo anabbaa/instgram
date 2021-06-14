@@ -11,7 +11,12 @@ import Post from "./post.json";
 function App() {
   const [photo, setPhoto] = useState(Gallery);
   const [posts, setPosts] = useState(Post);
-  const [userInput, setUserInpt] = useState(0);
+
+
+  const setLikes = (id) => {
+    console.log("APP", photo[id]);
+    setPhoto([...photo, photo[id].likes = photo[id].likes + 1]);
+  }
 
 
 
@@ -19,7 +24,7 @@ function App() {
     <div className="App">
       < Nav />
       <Info posts={posts}/>
-      <Main photo = {photo} setUserInpt={setUserInpt}/>
+      <Main photo = {photo} setLikes={setLikes}/>
         </div>
   );
 }
