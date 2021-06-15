@@ -1,7 +1,7 @@
 {
   "name": "instgram",
   "version": "0.1.0",
-  "home": "http://anabbaa.github.io/instgram",
+  "homepage": "http://anabbaa.github.io/instgram",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
