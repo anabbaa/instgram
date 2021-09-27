@@ -29,7 +29,7 @@ const Main = (props)=>{
     return(
       <div>
         <li key={id} className="image">
-      <img src={img} width="300px" height="300px" alt={title}  />
+      <img src={`${process.env.PUBLIC_URL}/${img}`} width="300px" height="300px" alt={title}  />
       <div className="image--overlay">
         <div >
          
@@ -64,12 +64,8 @@ const Main = (props)=>{
 
       <div className="image-father">
 {showphoto}
-
-  
     </div>
-    </div>
-
-    
+    </div>    
     );
 };
 export default Main;
