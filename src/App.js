@@ -5,20 +5,15 @@ import Main from "./components/Main";
 import Gallery from "./likes.json";
 import Post from "./post.json";
 
-
-
-
 function App() {
   const [photo, setPhoto] = useState(Gallery);
   const [posts, setPosts] = useState(Post);
-
+  console.log(Gallery);
 
   const setLikes = (id) => {
     console.log("APP", photo[id]);
     setPhoto([...photo, photo[id].likes = photo[id].likes + 1]);
   }
-
-
 
   return (
     <div className="App">
@@ -28,5 +23,4 @@ function App() {
         </div>
   );
 }
-
 export default App;
