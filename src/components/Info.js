@@ -2,6 +2,7 @@ import { FaRegCheckCircle} from "react-icons/fa";
 
 const Info = (props)=>{
     const {posts} = props;
+    //gere i make map for numbers which comes from posts 
     const follow =  posts.map((obj, id) => {
         return (
             <div className="Father-follow"key={id}>

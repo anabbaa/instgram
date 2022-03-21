@@ -13,7 +13,7 @@ const Main = (props)=>{
     setLikes(id);
    // setClicks((prevState)=>prevState + 1);
   }
-
+// here i distract photos from Gallery
   const showphoto = photo.map((obj)=>{
     const {
       id,
@@ -27,6 +27,7 @@ const Main = (props)=>{
       <div >
         <li key={id} className="image">
       <img src={`${process.env.PUBLIC_URL}/${img}`} width="300px" height="310px" alt={title}  />
+      {/*this div for likes and comments*/}
       <div className="image--overlay">
         <div className="like-up-father">
         <div className="like-father" >

@@ -6,10 +6,12 @@ import Gallery from "./likes.json";
 import Post from "./post.json";
 
 function App() {
+  //herenits for main video section
   const [photo, setPhoto] = useState(Gallery);
+  //post its only numbers for like followers following
   const [posts, setPosts] = useState(Post);
   console.log(Gallery);
-
+//this function to add like for every click
   const setLikes = (id) => {
     console.log("APP", photo[id]);
     setPhoto([...photo, photo[id].likes = photo[id].likes + 1]);
