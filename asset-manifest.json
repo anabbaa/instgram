@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/instgram/static/css/main.2345057a.chunk.css",
-    "main.js": "/instgram/static/js/main.cfaa2c85.chunk.js",
-    "main.js.map": "/instgram/static/js/main.cfaa2c85.chunk.js.map",
+    "main.js": "/instgram/static/js/main.00f3e109.chunk.js",
+    "main.js.map": "/instgram/static/js/main.00f3e109.chunk.js.map",
     "runtime-main.js": "/instgram/static/js/runtime-main.efd367b7.js",
     "runtime-main.js.map": "/instgram/static/js/runtime-main.efd367b7.js.map",
     "static/js/2.f46bdcb2.chunk.js": "/instgram/static/js/2.f46bdcb2.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.efd367b7.js",
     "static/js/2.f46bdcb2.chunk.js",
     "static/css/main.2345057a.chunk.css",
-    "static/js/main.cfaa2c85.chunk.js"
+    "static/js/main.00f3e109.chunk.js"
   ]
 }
