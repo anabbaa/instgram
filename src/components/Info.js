@@ -3,7 +3,6 @@ import { FaRegCheckCircle} from "react-icons/fa";
 const Info = (props)=>{
     const {posts} = props;
     const follow =  posts.map((obj, id) => {
-        
         return (
             <div className="Father-follow"key={id}>
                 <div >{obj.posts}</div><div  className="Posts">posts</div>
@@ -32,17 +31,14 @@ const Info = (props)=>{
                        {follow}
                    </div>
                 <div className="Info-text">
-                <span>instgram</span>
+                <h3 >instgram</h3>
                 <div>Bringing you closer to the people and things you love ❤️
                     For up-to-date COVID 19 information visit 
                     <a href="#">www.instagram.com/coronavirus_info</a>
                 </div>
-          
                 </div> 
-            </div>
-            
+            </div>   
                 </div>
-               
         </div>
     );
 };

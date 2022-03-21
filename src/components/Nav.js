@@ -6,7 +6,6 @@ import { FaCompass} from "react-icons/fa";
 const Nav = ()=>{
     return (
         <div className="Nav">
-            
                 <img className="Nav-img"src={`${process.env.PUBLIC_URL}/${"./img/instgram.png"}`}alt="instgram"/>
         
             <form>

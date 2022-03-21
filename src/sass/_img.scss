@@ -3,55 +3,64 @@
       @include flex-center-col;
       width: 70vw;
       height: 60vh;
-  }
-
+      .Info-img-bottom{
+        @include flex-spacebetween-row;
+        width: 35vw;
+        height: 10vh;
+      }
+  
   .line{
     border-bottom: 1px solid gray;
     height: 1vh;
     width: 50%;
-    
   }
    
-.Info-img-bottom{
-  @include flex-spacebetween-row;
-  width: 35vw;
-  height: 10vh;
-
-}
-  
   .Menue-father{
       @include flex-spacebetween-row;
-  
   height: 4vh;
   width: 50%;
-
+  .menue{
+    @include flex-center-row;
+    height: 4vh;
+    width: 8vw;
+  }
   }
   .image-father{
       @include flex-photo;
-      width: 80%;
-      height: 45vh;
+      width: 60vw;
+      height: 55vh;
     
-  }
-  
-  
-  
-    .image {
-    
-      width: 310px;
-      height: 310px;
-      
+      .image {
+        width: 300px;
+        height: 400px; 
+
+        .like {
+          color: #ffffff;
+          font-size: 1rem;
+          font-weight: bold;
+        }
+        
+        .image--description {
+          font-size: 1.3em;
+        }
+        .fa-heart{
+          color: white;
+          font-size: 2rem;
+          width: 4vw;
+        }
+        .fa-comment{
+          color: white;
+          font-size: 2rem;
+        }
+        .comment{
+          font-size: 1rem;
+          font-weight: bold;
+        }
+      }
     }
-    .menue{
-      @include flex-center-row;
-      height: 4vh;
-      width: 8vw;
-    
-    }
-  
-   
     .image--overlay {
-      width: 310px;
-      height: 310px;
+      width: 300px;
+      height: 300px;
       position: relative;
       @include flex-center-col;
       top: -34vh;
@@ -67,43 +76,42 @@
         @include flex-center-row;
         height: 2vh;
         width: 8vw;
-      }
-    }
-    .like-father{
+          .like-father{
       @include flex-center-row;
       height: 2vh;
-      width: 8vw;
-
-    }
-    
-    .like {
-      color: #ffffff;
-      font-size: 1rem;
-      font-weight: bold;
-      
-    }
-    
-    .image--description {
-      font-size: 1.3em;
-    }
-    .fa-heart{
-      color: white;
-      font-size: 2rem;
-      
       width: 4vw;
+      .like-father{
+        @include flex-center-row;
+        height: 2vh;
+        width: 8vw;
+        .like {
+          color: #ffffff;
+          font-size: 1rem;
+          font-weight: bold;
+        }
+        
+        .image--description {
+          font-size: 1.3em;
+        }
+        .fa-heart{
+          color: white;
+          font-size: 2rem;
+          width: 4vw;
+        }
+        .fa-comment{
+          color: white;
+          font-size: 2rem;
+          
+        }
+        .comment{
+          font-size: 1rem;
+          font-weight: bold;
+        }
+      }
     }
-    .fa-comment{
-      color: white;
-      font-size: 2rem;
-      
-    }
-    .comment{
-      font-size: 1rem;
-      font-weight: bold;
-      
+      }
     }
     li{
       list-style: none;
     }
-    
-    
+  } 

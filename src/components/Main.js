@@ -15,7 +15,6 @@ const Main = (props)=>{
   }
 
   const showphoto = photo.map((obj)=>{
-
     const {
       id,
       title,
@@ -27,15 +26,15 @@ const Main = (props)=>{
     return(
       <div >
         <li key={id} className="image">
-      <img src={`${process.env.PUBLIC_URL}/${img}`} width="300px" height="300px" alt={title}  />
+      <img src={`${process.env.PUBLIC_URL}/${img}`} width="300px" height="310px" alt={title}  />
       <div className="image--overlay">
         <div className="like-up-father">
         <div className="like-father" >
-         
           <FontAwesomeIcon icon={faHeart} onClick={e => add(id)} />
 
          <div className="like"> {likes}</div>
         </div>
+
         <div  className="like-father">
       <span> <FontAwesomeIcon icon={faComment} /> </span>
 
