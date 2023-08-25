@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React  from "react";
 import { FaTh } from "react-icons/fa";
 import { FaAddressBook } from "react-icons/fa";
 import { FaDesktop } from "react-icons/fa";
@@ -6,6 +6,7 @@ import { FaRegCaretSquareRight } from "react-icons/fa";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { faComment } from '@fortawesome/free-solid-svg-icons'
+import infoImgs from "../infImg.json";
 
 const Main = (props)=>{
   const {photo, setLikes} = props;
@@ -48,19 +49,25 @@ const Main = (props)=>{
     );
   });
 
+  const imgInfos =infoImgs.map((obj)=> {
+    const  {
+      title,
+      img
+    } = obj;
+    return (
+      <div>
+              <img className="img" src={`${process.env.PUBLIC_URL}/${img}`}  alt={title}  />   
+      </div>
+    )
+  });
+
     return (
     <div className="main-father">
             <div className="Info-img-bottom">
-                <div><img className="Img"  src={`${process.env.PUBLIC_URL}/${"./img/1.png"}`} alt= "1" width="100px" height="100px" /></div>
-                <div><img className="Img" src= {`${process.env.PUBLIC_URL}/${"./img/2.png"}`} alt= "2"  width="100px" height="100px"/></div>
-                <div><img className="Img" src= {`${process.env.PUBLIC_URL}/${"./img/3.png"}`} alt= "3"  width="100px" height="100px"/></div>
-                <div><img className="Img" src= {`${process.env.PUBLIC_URL}/${"./img/4.png"}`} alt= "4"  width="100px" height="100px"/></div>
-                <div><img className="Img" src={`${process.env.PUBLIC_URL}/${"./img/5.png"}`} alt= "5"  width="100px" height="100px"/></div>
-                <div><img className="Img" src= {`${process.env.PUBLIC_URL}/${"./img/6.png"}`} alt= "6"  width="100px" height="100px"/></div>
+              {imgInfos}
                 </div>
         <div className="line"></div>
       <div className="Menue-father">
-      
            <div className="menue"><FaTh />Posts</div>
            <div className="menue">< FaRegCaretSquareRight />Reels</div>
            <div className="menue">< FaDesktop />IGTV</div>

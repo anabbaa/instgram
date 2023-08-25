@@ -7,11 +7,9 @@ const Nav = ()=>{
     return (
         <div className="Nav">
                 <img className="Nav-img"src={`${process.env.PUBLIC_URL}/${"./img/instgram.png"}`}alt="instgram"/>
-        
             <form>
             <input type="search" placeholder="search&#128269; "/>
             </form>
-
             <div className="icon-father">
         <a href="#">< ImHome /></a>
         <a href="#">< FaRegPaperPlane /></a>
