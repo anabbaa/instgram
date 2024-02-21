@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/instgram/static/css/main.b5b45c37.chunk.css",
+    "main.css": "/instgram/static/css/main.59261536.chunk.css",
     "main.js": "/instgram/static/js/main.c3a053e1.chunk.js",
     "main.js.map": "/instgram/static/js/main.c3a053e1.chunk.js.map",
     "runtime-main.js": "/instgram/static/js/runtime-main.efd367b7.js",
@@ -8,13 +8,13 @@
     "static/js/2.d6dd293f.chunk.js": "/instgram/static/js/2.d6dd293f.chunk.js",
     "static/js/2.d6dd293f.chunk.js.map": "/instgram/static/js/2.d6dd293f.chunk.js.map",
     "index.html": "/instgram/index.html",
-    "static/css/main.b5b45c37.chunk.css.map": "/instgram/static/css/main.b5b45c37.chunk.css.map",
+    "static/css/main.59261536.chunk.css.map": "/instgram/static/css/main.59261536.chunk.css.map",
     "static/js/2.d6dd293f.chunk.js.LICENSE.txt": "/instgram/static/js/2.d6dd293f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.efd367b7.js",
     "static/js/2.d6dd293f.chunk.js",
-    "static/css/main.b5b45c37.chunk.css",
+    "static/css/main.59261536.chunk.css",
     "static/js/main.c3a053e1.chunk.js"
   ]
 }
